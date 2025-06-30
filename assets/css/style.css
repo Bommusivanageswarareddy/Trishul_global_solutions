@@ -274,7 +274,11 @@ body {
   font-family: var(--ff-source-sans-pro);
   font-size: var(--fs-3);
 }
-
+.logo1{
+  color: var(--color);
+  font-family: var(--ff-source-sans-pro);
+  font-size: var(--fs-3);
+}
 .nav-open-btn {
   color: var(--color);
   font-size: 32px;
@@ -851,7 +855,18 @@ body {
   .section__description{
     font-size: 15px;
   }
-
+ .logo1{
+  font-size: 18px;
+  margin-left: -20px;
+ }
+.logo2{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+.hero-title{
+  font-size: 25px;
+}
 }
 @media (max-width:321px) {
  .section__header{
@@ -859,6 +874,10 @@ body {
   }
   .section__description{
     font-size: 15px;
+  }
+    .logo1{
+    font-size: 18px;
+    margin-left: -10px;
   }
 }
 @media (min-width:376px) {
@@ -874,15 +893,38 @@ body {
 
 }
 
+@media only screen and (min-width: 380px)and (max-width:480px){
+  .logo1{
+    font-size: 18px;
+    margin-left: -10px;
+  }
+  .hero-title{
+    font-size: 25px;
+  }
+  .hero-subtitle{
+    font-size: 15px;
+  }
+}
+  
+
+
+
+
 @media (min-width: 600px) {
 
   /**
    * REUSED STYLE
    */
-
+.btn{
+  padding: 10px 10px;
+}
   .container {
     max-width: 550px;
     margin-inline: auto;
+  }
+     .logo1{
+    font-size: 20px;
+    margin-left: -20px;
   }
 
   .section-title { --fs-3: 3.6rem; }
@@ -956,6 +998,10 @@ body {
   }
   .contact-right{
     display: none;
+  }
+     .logo{
+    font-size: 30px;
+    margin-left: -20px;
   }
  
 }
