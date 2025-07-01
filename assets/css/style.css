@@ -715,13 +715,85 @@ body {
 .contact-right img{
   width: 500px;
 }
+
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 10s linear infinite;
+}
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+  perspective: 100px;
+}
+
+.slide img{
+  width: 100%;
+  transition: transform 1s;
+}
+.slide img:hover{
+  transform: translateZ(20px);
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slide_title{
+  font-size: 15px;
+}
+
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
 .footer { font-size: var(--fs-8); }
 
-.footer a { color: inherit; }
+.footer a { color: inherit;
+margin-left: 5px;
+ }
 
 .footer-top {
   background-image: url("../images/footer-bg.png"), var(--gradient-1);
@@ -729,7 +801,9 @@ body {
   background-size: auto, 200%;
   background-position: center, center;
   color: var(--white);
+
 }
+
 
 .footer-brand { margin-block-end: 30px; }
 
@@ -748,6 +822,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+ padding-left: 200  px;
 }
 
 .footer-top .social-link {
