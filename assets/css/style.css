@@ -237,9 +237,9 @@ body {
 .header .btn { display: none; }
 
 .logo2{
-  height: 50px;
-  width: 50px;
-  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 70px;
 }
 
 .header {
@@ -860,9 +860,9 @@ body {
   margin-left: -20px;
  }
 .logo2{
-  height: 40px;
-  width: 40px;
-  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
 }
 .hero-title{
   font-size: 25px;
@@ -879,6 +879,12 @@ body {
     font-size: 18px;
     margin-left: -10px;
   }
+.logo2{
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+}
+  
 }
 @media (min-width:376px) {
   .steps__grid {
@@ -904,6 +910,12 @@ body {
   .hero-subtitle{
     font-size: 15px;
   }
+
+  .logo2{
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+}
 }
   
 
@@ -917,6 +929,12 @@ body {
    */
 .btn{
   padding: 10px 10px;
+}
+
+.logo2{
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
 }
   .container {
     max-width: 550px;
